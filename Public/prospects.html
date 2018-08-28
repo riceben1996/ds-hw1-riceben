@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+
+      .topnav {
+          background-color: #333;
+          overflow: hidden;
+      }
+
+      .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+      }
+
+      .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+      .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+      }
+
+      #prospects {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+     #prospects td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+      }
+
+     #prospects tr:nth-child(even){background-color: #f2f2f2;}
+
+     #prospects tr:hover {background-color: #ddd;}
+
+     #prospects th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+      }
+
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    </style>
+
+    <title>About me</title>
+
+</head>
+
+<!-- Start of project -->
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="myteam.html">My Team</a>
+    <a class="active" href="prospects.html">Prospects</a>
+  </div>
+
+<body>
+			<div class="div">
+        <h2>Top Fantasy Football Prospects</h2>
+        <table id="prospects">
+          <tr>
+            <th>Rank</th>
+            <th>Player Name</th>
+            <th>Position</th>
+            <th>Birthday</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Tom Brady</td>
+            <td>QB</td>
+            <td>08/03/1977</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Leveon Bell</td>
+            <td>RB</td>
+            <td>02/18/1992</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Antonio Brown</td>
+            <td>WR</td>
+            <td>07/10/1988</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Todd Gurley</td>
+            <td>RB</td>
+            <td>08/03/1994</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Julio Jones</td>
+            <td>WR</td>
+            <td>02/08/1989</td>
+          </tr>
+      </table>
+		</div>
+    <div class="div">
+      <h2>Please Enter A New Prospect</h2>
+      <form>
+        Rank: <br>
+        <input type="number" name="rank"><br>
+        Player Name: <br>
+        <input type="text" name="playerName"><br>
+        Position: <br>
+        <input type="text" name="position"><br>
+        Birthday: <br>
+        <input type="date" name="auctionBidValue"><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    </div><!-- end intro-->
+
+</html>

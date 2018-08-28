@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style type="text/css">
 
+       h1 {
+         text-align: center;
+         color: white;
+         font-size: 48pt;
+       }
+
+      body, html {
+          height: 100%;
+        }
+
+      .bg {
+        /* The image used */
+        background-image: url("images/background.png");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
       /* Add a black background color to the top navigation */
       .topnav {
@@ -37,6 +59,22 @@
           color: white;
       }
 
+      .center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+      }
+
+      .centerh1 {
+        position: fixed;
+        top: 80%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+      }
+
     </style>
 
     <title>About me</title>
@@ -45,46 +83,15 @@
 
 <!-- Start of project -->
 
-  <div class="topnav">
-    <a class="active" href="index.html">About Me</a>
-    <a href="WorkExamples.html">Work Examples</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="myteam.html">My Team</a>
+  <a href="prospects.html">Prospects</a>
+</div>
 
-<body>
-		<div class="container">
-			<div class="header">
-				<h1>About Me</h1>
-			</div><!-- end header-->
-			<div class="image">
-				<img src="images/Headshot.png">
-			</div><!-- end image-->
-			<div class="intro column">
-				<h2>Introduction</h2>
-				<p>
-					My name is Ben Rice. I am currently a Masters of Science in Information Systems at the Kelley School of Business. I graduated from Kelley
-          last year with a bachelors degree in Information Sytems and Operations Management.
-				</p>
-			</div><!-- end intro-->
-			<div class="skills column">
-				<h3>My Skills</h3>
-				<ul id="skill-list">
-					<li>SQL</li>
-					<li>ERP</li>
-					<li>Visual Basic</li>
-					<li>Splunk</li>
-				</ul><!--end skill-list-->
-			</div><!-- end skills-->
-			<div class="main-text">
-				<h3>More About Me</h3>
-				<p>
-					I am a technical problem solver with a passion for the technologies that drive businesses operationally. I have always felt that I understand problems best from the ground-up and that has led me to pursue a career on the IT side of operations and supply chain. Currently I am pursuing my MSIS (Masters of Science in Information Systems) specializing in Digital Enterprise Technology at the Kelley School of Business. In May of 2018 I graduated with my bachelors degree, also at the Kelley School of Business, majoring in Information Systems and Operations Management.
-				</p>
-				<p>
-					To pair with my business acumen from Kelley, I have focused all of my internships on learning the technology that make a business's wheels turn. Through interning at companies such as General Electric, W.W. Grainger, and Indiana Mills and Manufacturing, along with consulting on semester long student engagements with Deublin Company and Berry Plastics, I have gained a breadth of understanding of various enterprise technologies. These technologies include Enterprise Resource Planning (ERP), Product Life-cycle Management (PLM), and Splunk (Enterprise Monitoring). My technical skill set includes: SQL, Visual Basic, Java, and JavaScript (React & GraphQL).
-        </p>
-			</div><!-- end main-text-->
-		</div><!--end container-->
-	</body>
+<div class="bg">
+    <img src="images/fantasyfootball.png" class="center">
+    <h1 class="centerh1">Welcome to The League</h1>
+</div>
 
 </html>
